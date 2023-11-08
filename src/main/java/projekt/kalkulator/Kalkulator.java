@@ -1,7 +1,5 @@
 package projekt.kalkulator;
 
-import java.util.Scanner;
-
 public class Kalkulator {
     //dodanie metody
 public Integer dodaj(String dane){
@@ -10,7 +8,7 @@ public Integer dodaj(String dane){
         return 0;
     }
     //dodanie string ktory pozwala zeby liczby byly rozdzielane przez znaki
-    String[] ignorowacZnaki = dane.split(",|/n");
+    String[] ignorowacZnaki = dane.split(",|\n");
     //stworzenie int który przechowuje wynik
     Integer wynikDodawania = 0;
     for (int i = 0; i <ignorowacZnaki.length ; i++){
