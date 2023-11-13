@@ -16,7 +16,7 @@ void zwraca_zero_kiedy_string_is_null(){
      Kalkulator kalkulator = new Kalkulator();
      Integer wynik = null;
      //wylapujemy mozliwy blad
-     //nie wiem jak urzyc try catch
+     //nie wiem jak urzyc try catc
  }
     @Test
     void dla_pustego_stringa_zwraca_zero() {

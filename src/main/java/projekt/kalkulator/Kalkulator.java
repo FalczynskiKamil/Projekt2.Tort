@@ -33,6 +33,6 @@ public Integer dodaj(String dane){
 
     }
     // zwrocenie wyniku
-    return wynikDodawania%1000;}
+    return wynikDodawania % 1000;}
 
     }
