@@ -9,6 +9,7 @@ public Integer dodaj(String dane){
     String separatory = ",|\n|;";
     String demiDane = dane;
     String nowySeparatory = "";
+    Integer tysiac = 1000;
 
     if(dane.startsWith("//")){
         demiDane = dane.substring(dane.indexOf("\n")+1);
@@ -17,6 +18,7 @@ public Integer dodaj(String dane){
 
         separatory = separatory + "|" + nowySeparatory;
     }
+
     //dodanie string ktory pozwala zeby liczby byly rozdzielane przez znaki
     String[] delimiter = demiDane.split(separatory);
 
@@ -31,6 +33,6 @@ public Integer dodaj(String dane){
 
     }
     // zwrocenie wyniku
-    return wynikDodawania;}
+    return wynikDodawania%1000;}
 
     }

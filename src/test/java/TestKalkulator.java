@@ -51,6 +51,22 @@ void zwraca_zero_kiedy_string_is_null(){
         Integer wynik = kalkulator.dodaj(dane);
         assertEquals(oczekiwanyWynik,wynik);
     }
+    @Test
+    void ujemne_niedozwolone() {
+        String dane = "//;\n1;2";
+        Integer oczekiwanyWynik=3;
+        Kalkulator kalkulator = new Kalkulator();
+        Integer wynik = kalkulator.dodaj(dane);
+        assertEquals(oczekiwanyWynik,wynik);
+    }
+    @Test
+    void nie_moze_byc_powyzej_tysiac() {
+        String dane = "2002,1";
+        Integer oczekiwanyWynik=3;
+        Kalkulator kalkulator = new Kalkulator();
+        Integer wynik = kalkulator.dodaj(dane);
+        assertEquals(oczekiwanyWynik,wynik);
+    }
 
 
 }
