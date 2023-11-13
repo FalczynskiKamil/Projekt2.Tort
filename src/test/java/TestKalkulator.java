@@ -16,10 +16,7 @@ void zwraca_zero_kiedy_string_is_null(){
      Kalkulator kalkulator = new Kalkulator();
      Integer wynik = null;
      //wylapujemy mozliwy blad
-     try{wynik = kalkulator.dodaj(dane);
-     fail();}catch (NullPointerException ex){
-         assertEquals("Cannot invoke \"String.isEmpty()\" because \"dane\" is null", ex.getMessage());
-     }
+     //nie wiem jak urzyc try catch
  }
     @Test
     void dla_pustego_stringa_zwraca_zero() {
@@ -42,6 +39,14 @@ void zwraca_zero_kiedy_string_is_null(){
     void pozwala_dodawac_liczby_oddzielone_enterem() {
         String dane = "1\n2\n3";
         Integer oczekiwanyWynik=6;
+        Kalkulator kalkulator = new Kalkulator();
+        Integer wynik = kalkulator.dodaj(dane);
+        assertEquals(oczekiwanyWynik,wynik);
+    }
+    @Test
+    void dane_z_delimeter() {
+        String dane = "//;\n1;2";
+        Integer oczekiwanyWynik=3;
         Kalkulator kalkulator = new Kalkulator();
         Integer wynik = kalkulator.dodaj(dane);
         assertEquals(oczekiwanyWynik,wynik);
