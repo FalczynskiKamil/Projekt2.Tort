@@ -16,6 +16,6 @@ public class TestTort {
         Integer oczekiwanyWynik = 1;
         Urodzinowy urodzinowy = new Urodzinowy();
         int ilosc = urodzinowy.policzSwieczki(swieczki);
-        assertEquals(oczekiwanyWynik, ilosc);
+        assertEquals(oczekiwanyWynik, ilosc );
     }
 }

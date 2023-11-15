@@ -18,7 +18,7 @@ public class Urodzinowy {
             } else if (swieczki[dlugosc]==longest) {
                 //zwieksza licznik najdluzszych liczb
                 ilosc++;
-            }
+             }
         }
         if(longest>1 && longest<10 && ilosc>1 && ilosc<10){
         return ilosc;}
