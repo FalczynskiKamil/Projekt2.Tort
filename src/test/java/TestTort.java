@@ -11,9 +11,9 @@ public class TestTort {
     @Test
     void ilosc_najdluzsej_swieczki() {
         //dlugosci swieczek na torcie
-        int[] swieczki = {11, 5, 8, 3, 2, 8,5};
+        int[] swieczki = {4, 5, 8, 9, 9, 8,9};
         //ilosc najdluzszych sieczek
-        Integer oczekiwanyWynik = 1;
+        Integer oczekiwanyWynik = 3;
         Urodzinowy urodzinowy = new Urodzinowy();
         int ilosc = urodzinowy.policzSwieczki(swieczki);
         assertEquals(oczekiwanyWynik, ilosc );
